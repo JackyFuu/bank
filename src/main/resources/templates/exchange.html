@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 大众银行 - 您的财富管家 </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}">
+    <!-- fontawesome icon  -->
+    <link rel="stylesheet" th:href="@{/assets/css/fontawesome.min.css}">
+    <!-- flaticon css -->
+    <link rel="stylesheet" th:href="@{/assets/fonts/flaticon.css}">
+    <!-- animate.css -->
+    <link rel="stylesheet" th:href="@{/assets/css/animate.css}">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" th:href="@{/assets/css/owl.carousel.min.css}">
+    <!-- magnific popup -->
+    <link rel="stylesheet" th:href="@{/assets/css/magnific-popup.css}">
+    <!-- stylesheet -->
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <img th:src="@{/assets/img/loader-img.gif}" alt="">
+    </div><!-- /Preloader -->
+
+    <!--Header Top-->
+    <div class="header-top">
+        <div  th:replace="headtop::head-top"></div>
+    </div>
+    <!--/Header Top-->
+
+    <!-- Header Area -->
+    <header class="main_menu_area header-2">
+        <div th:replace="headarea::head-area"></div>
+    </header><!-- Header Area -->
+
+    <!-- breadcrumb begin -->
+    <div class="breadcrumb-chn">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8">
+                    <div class="breadcrumb-content">
+                        <h2>Exchange</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li>/ Exchange</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb end -->
+
+    <!-- exchange begin -->
+    <div class="about-area exchange">
+        <div class="container">
+            <div class="row single-segment">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="part-img">
+                        <img src="assets/img/exchange.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-xl-flex d-lg-flex d-block align-items-center">
+                    <div class="part-text">
+                        <h3>Pellentesque Dtium venatis magna. </h3>
+                        <p>Mattis quaerat pellentesque, fusce montes nibh rutrum velit nunc feugiat, non sed sint,
+                            commodo ultricies. Venenatis lobortis mattis, mus eleifend. Nisl varius porttitor aenean
+                            pretium enim metus. Purus cursus enim eros.</p>
+
+                        <ul>
+                            <li>
+                                <i class="fas fa-check"></i> A nulla blandit at ridiculus eros metus
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> A nulla blandit at ridiculus eros metus
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> A nulla blandit at ridiculus eros metus
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- exchange end -->
+
+    <!-- feature begin -->
+    <div class="feature section-padding-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-feature">
+                        <div class="part-icon">
+                            <img src="assets/img/icon-4.png" alt="">
+                        </div>
+                        <div class="part-text">
+                            <h3>regular update</h3>
+                            <p>Scelerisque proin viverra ante venatis turpis commodo lacus lacusr aliquam volutpat ametulla purusing </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-feature">
+                        <div class="part-icon">
+                            <img src="assets/img/icon-5.png" alt="">
+                        </div>
+                        <div class="part-text">
+                            <h3>unlimited exchange</h3>
+                            <p>Scelerisque proin viverra ante venatis turpis commodo lacus lacusr aliquam volutpat ametulla purusing </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-feature">
+                        <div class="part-icon">
+                            <img src="assets/img/icon-6.png" alt="">
+                        </div>
+                        <div class="part-text">
+                            <h3>customer support</h3>
+                            <p>Scelerisque proin viverra ante venatis turpis commodo lacus lacusr aliquam volutpat ametulla purusing </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- feature end -->
+
+    <!-- order begin -->
+    <div class="order">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8">
+                    <div class="section-title text-center">
+                        <h2>待定订单</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="order-area table-responsive table-responsive-sm table-responsive-md table-responsive-xl table-responsive-lg">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">user name</th>
+                                    <th scope="col">send</th>
+                                    <th scope="col">recived</th>
+                                    <th scope="col">amount</th>
+                                    <th scope="col">status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">pranto</th>
+                                    <td>perfect money </td>
+                                    <td>bitcoin </td>
+                                    <td>5874 <i class="fas fa-exchange-alt"></i> 15.82 </td>
+                                    <td>procsseing</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">tamim</th>
+                                    <td>perfect money </td>
+                                    <td>neteller </td>
+                                    <td>5874 <i class="fas fa-exchange-alt"></i> 15.82 </td>
+                                    <td>procsseing</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">pratik</th>
+                                    <td>perfect money </td>
+                                    <td>bitcoin </td>
+                                    <td>5874 <i class="fas fa-exchange-alt"></i> 15.82 </td>
+                                    <td>procsseing</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">fahad</th>
+                                    <td>perfect money </td>
+                                    <td>paypal </td>
+                                    <td>5874 <i class="fas fa-exchange-alt"></i> 15.82 </td>
+                                    <td>procsseing</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8">
+                    <div class="section-title text-center">
+                        <h2>已成交订单</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="order-area table-responsive table-responsive-sm table-responsive-md table-responsive-xl table-responsive-lg">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">user name</th>
+                                    <th scope="col">send</th>
+                                    <th scope="col">recived</th>
+                                    <th scope="col">amount</th>
+                                    <th scope="col">status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">pranto</th>
+                                    <td>perfect money </td>
+                                    <td>bitcoin </td>
+                                    <td>5874 <i class="fas fa-exchange-alt"></i> 15.82 </td>
+                                    <td>procsseing</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">tamim</th>
+                                    <td>perfect money </td>
+                                    <td>neteller </td>
+                                    <td>5874 <i class="fas fa-exchange-alt"></i> 15.82 </td>
+                                    <td>procsseing</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">pratik</th>
+                                    <td>perfect money </td>
+                                    <td>bitcoin </td>
+                                    <td>5874 <i class="fas fa-exchange-alt"></i> 15.82 </td>
+                                    <td>procsseing</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">fahad</th>
+                                    <td>perfect money </td>
+                                    <td>paypal </td>
+                                    <td>5874 <i class="fas fa-exchange-alt"></i> 15.82 </td>
+                                    <td>procsseing</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- order end -->
+
+    <!-- footer begin -->
+    <div class="footer">
+        <div th:replace="footer::footer"></div>
+    </div>
+    <!-- footer end -->
+
+    <!-- copyright begin -->
+    <div class="copyright">
+        <div th:replace="copyright::copyright"></div>
+    </div>
+    <!-- copyright end -->
+
+    <!-- jquery -->
+    <script th:src="@{/assets/js/jquery-3.3.1.min.js}"></script>
+    <script th:src="@{/assets/js/jquery-migrate-3.0.1.js}"></script>
+    <!-- bootstrap -->
+    <script th:src="@{/assets/js/bootstrap.min.js}"></script>
+    <!-- owl carousel -->
+    <script th:src="@{/assets/js/owl.carousel.js}"></script>
+    <!-- magnific popup -->
+    <script th:src="@{/assets/js/jquery.magnific-popup.js}"></script>
+    <!-- counter up js -->
+    <script th:src="@{/assets/js/jquery.counterup.min.js}"></script>
+    <!-- way poin js-->
+    <script th:src="@{/assets/js/waypoints.min.js}"></script>
+    <!-- wow js-->
+    <script th:src="@{/assets/js/wow.min.js}"></script>
+    <!-- main -->
+    <script th:src="@{/assets/js/main.js}"></script>
+</body>
+
+</html>

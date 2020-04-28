@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 大众银行 - 您的财富管家 </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}">
+    <!-- fontawesome icon  -->
+    <link rel="stylesheet" th:href="@{/assets/css/fontawesome.min.css}">
+    <!-- flaticon css -->
+    <link rel="stylesheet" th:href="@{/assets/fonts/flaticon.css}">
+    <!-- animate.css -->
+    <link rel="stylesheet" th:href="@{/assets/css/animate.css}">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" th:href="@{/assets/css/owl.carousel.min.css}">
+    <!-- magnific popup -->
+    <link rel="stylesheet" th:href="@{/assets/css/magnific-popup.css}">
+    <!-- stylesheet -->
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <img th:src="@{/assets/img/loader-img.gif}" alt="">
+    </div><!-- /Preloader -->
+
+    <!--Header Top-->
+    <div class="header-top">
+        <div  th:replace="headtop::head-top"></div>
+    </div>
+    <!--/Header Top-->
+
+    <!-- Header Area -->
+    <header class="main_menu_area header-2">
+        <div th:replace="headarea::head-area"></div>
+    </header><!-- Header Area -->
+
+    <!-- banner begin -->
+    <div class="banner-2" style="background: url('assets/img/banner-2.jpg') no-repeat">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="bannner-content-2">
+                        <h1>最好的货币交易服务 </h1>
+                        <p>你的明智选择</p>
+                        <a href="#">获取更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- testimonial & convert currency begin -->
+    <div class="testi-currency section-padding gray-bg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-12 col-lg-12 d-xl-flex d-lg-flex d-block align-items-center">
+                    <div class="convert-currency convert-currency-be-af">
+                        <div class="section-title text-center">
+                            <h2>兑换你的货币，获得最高的 <br> 利润</h2>
+                        </div>
+                        <form class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sn-12">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">You Send</label>
+                                    <div class="d-flex">
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="$2546">
+                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                            <option selected>USD</option>
+                                            <option value="3">RMB</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sn-12">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">You Received</label>
+                                    <div class="d-flex">
+                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="2454.21">
+                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect3">
+                                            <option>USD</option>
+                                            <option selected value="3">RMB</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit">兑换</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial & convert currency end -->
+
+    <!-- section begin -->
+    <div class="sections section-padding-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8">
+                    <div class="section-title">
+                        <h2>你可以相信我们公司的 <br>兑换服务</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="single-trust-batch">
+                                <img src="assets/img/trust-icon-1.png" alt="">
+                                <h4>市场最佳 <br> 利率</h4>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="single-trust-batch">
+                                <img src="assets/img/trust-icon-2.png" alt="">
+                                <h4>免费订阅</h4>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="single-trust-batch">
+                                <img src="assets/img/trust-icon-3.png" alt="">
+                                <h4>无限制 <br> 兑换</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="trust-banner">
+                        <img src="assets/img/trust-banner.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section end -->
+
+    <!-- section begin -->
+    <div class="section-padding-2 gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8">
+                    <div class="section-title text-center">
+                        <h2>如何兑换您的货币</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-exchange-currency">
+                        <img src="assets/img/single-ex-icon-1.png" alt="">
+                        <h4>转移资金到您的钱包</h4>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-exchange-currency">
+                        <img src="assets/img/single-ex-icon-2.png" alt="">
+                        <h4>寻找最佳利润率</h4>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-exchange-currency">
+                        <img src="assets/img/single-ex-icon-3.png" alt="">
+                        <h4>兑换最佳利润</h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section end -->
+
+    <!-- affiliate -->
+    <div class="section-padding-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
+                    <div class="affiliate-video">
+                        <div class="aff-vid"><img src="assets/img/aff-vid.png" alt=""></div>
+                        <a href="" class="aff-vid-icon"><img src="assets/img/play-btn.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12">
+                    <div class="aff-content">
+                        <h5>伙伴计划</h5>
+                        <h2>加入我们的伙伴计划并开始受益</h2>
+                        <p>Lorem ipsum dolor sit amet, lacus nunc imperdiet, et rutrum suspendisse Augue eros consectetuer ac luctus, euismod congue ut sodales, neque non velit iiusto nullam fusce placerat quis, morbi eget. Sollicitudin porta nibh wisi erat lacinia ina. </p>
+                        <ul>
+                            <li>A nulla blandit at ridiculus eros metus</li>
+                            <li>A nulla blandit at ridiculus eros metus</li>
+                            <li>A nulla blandit at ridiculus eros metus</li>
+                            <li>A nulla blandit at ridiculus eros metus</li>
+                        </ul>
+                        <a href="" class="bttn-mid btn-fill">成为伙伴</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- affiliate end -->
+
+    <!-- reserve begin -->
+    <div class="reserve section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8 text-center">
+                    <div class="section-title">
+                        <h4>今日货币利率</h4>
+                        <h2>查看今日最佳利率</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="table-chart table-responsive table-responsive-sm table-responsive-md table-responsive-xl table-responsive-lg">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">currency</th>
+                                    <th scope="col">reserve</th>
+                                    <th scope="col">currency</th>
+                                    <th scope="col">reserve</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">perfect money</th>
+                                    <td>5874.158</td>
+                                    <td>state bank</td>
+                                    <td>5874.158</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">payoneer usd</th>
+                                    <td>5874.158</td>
+                                    <td>state bank</td>
+                                    <td>5874.158</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">paypal usd</th>
+                                    <td>5874.158</td>
+                                    <td>state bank</td>
+                                    <td>5874.158</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">neteller usd</th>
+                                    <td>5874.158</td>
+                                    <td>state bank</td>
+                                    <td>5874.158</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">bitcoin</th>
+                                    <td>5874.158</td>
+                                    <td>state bank</td>
+                                    <td>5874.158</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">etherium</th>
+                                    <td>5874.158</td>
+                                    <td>state bank</td>
+                                    <td>5874.158</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">litecoin</th>
+                                    <td>5874.158</td>
+                                    <td>state bank</td>
+                                    <td>5874.158</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">skrill usd</th>
+                                    <td>5874.158</td>
+                                    <td>state bank</td>
+                                    <td>5874.158</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="pie-chart">
+                        <img src="assets/img/chart-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- reserve end -->
+
+    <!--Pricing Area-->
+    <section class="pricing-area section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <div class="section-title">
+                        <h2 class="mb-10">选择您的最佳兑换价格</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row justify-content-center">
+                        <ul id="tabsJustified" class="nav nav-tabs pricing-tab-btns text-center">
+                            <li><a href="" data-target="#digital" data-toggle="tab" class="active bor-radius-lft">年化</a></li>
+                            <li><a href="" data-target="#design" data-toggle="tab" class="bor-radius-rgt">月化</a></li>
+                        </ul>
+                    </div>
+                    <div id="tabsJustifiedContent" class="tab-content">
+                        <div id="digital" class="tab-pane fade active show">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="single-pricing">
+                                        <h4>Free Offer</h4>
+                                        <h3>$0.00</h3>
+                                        <ul>
+                                            <li>01 Flyers</li>
+                                            <li>No re- design or custom</li>
+                                            <li>01 degital bannner</li>
+                                            <li>No review</li>
+                                            <li>Not support</li>
+                                        </ul>
+                                        <a href="" class="bttn-mid btn-fill">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="single-pricing">
+                                        <h4>Business Offer</h4>
+                                        <h3>$50.00</h3>
+                                        <ul>
+                                            <li>03 Flyers</li>
+                                            <li>Re- design or custom</li>
+                                            <li>05 degital bannner</li>
+                                            <li>02 time review</li>
+                                            <li>6 month support</li>
+                                        </ul>
+                                        <a href="" class="bttn-mid btn-fill">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="single-pricing">
+                                        <h4>Golden Offer</h4>
+                                        <h3>$70.00</h3>
+                                        <ul>
+                                            <li>10 Flyers</li>
+                                            <li>Re- design or custom</li>
+                                            <li>15 degital bannner</li>
+                                            <li>05 time review</li>
+                                            <li>1 year support</li>
+                                        </ul>
+                                        <a href="" class="bttn-mid btn-fill">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="design" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="single-pricing">
+                                        <h4>Basic Plan</h4>
+                                        <h3>$5.00</h3>
+                                        <ul>
+                                            <li>3500 square area feet</li>
+                                            <li>5 living room</li>
+                                            <li>1 dining room</li>
+                                            <li>Domestic service</li>
+                                            <li>1st month free service</li>
+                                        </ul>
+                                        <a href="" class="bttn-mid btn-fill">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="single-pricing">
+                                        <h4>Golden Plan</h4>
+                                        <h3>$15.00</h3>
+                                        <ul>
+                                            <li>3500 square area feet</li>
+                                            <li>5 living room</li>
+                                            <li>1 dining room</li>
+                                            <li>Domestic service</li>
+                                            <li>1st month free service</li>
+                                        </ul>
+                                        <a href="" class="bttn-mid btn-fill">Order Now</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="single-pricing">
+                                        <h4>Business Plan</h4>
+                                        <h3>$20.00</h3>
+                                        <ul>
+                                            <li>3500 square area feet</li>
+                                            <li>5 living room</li>
+                                            <li>1 dining room</li>
+                                            <li>Domestic service</li>
+                                            <li>1st month free service</li>
+                                        </ul>
+                                        <a href="" class="bttn-mid btn-fill">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/Pricing Area-->
+
+    <!-- blog begin -->
+    <div class="blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8">
+                    <div class="section-title text-center">
+                        <h2>最新新闻</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-blog-2">
+                        <img src="assets/img/blog-1.jpg" alt="">
+                        <div class="blog-title">
+                            <h3><a href="">Pede laoreet lorem maecenas vestib</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-blog-2">
+                        <img src="assets/img/blog-2.jpg" alt="">
+                        <div class="blog-title">
+                            <h3><a href="">Pede laoreet lorem maecenas vestib</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-blog-2">
+                        <img src="assets/img/blog-3.jpg" alt="">
+                        <div class="blog-title">
+                            <h3><a href="">Pede laoreet lorem maecenas vestib</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog end -->
+
+    <!-- brand begin -->
+    <div class="brand">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-brand">
+                        <img src="assets/img/brand-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-brand">
+                        <img src="assets/img/brand-2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-brand">
+                        <img src="assets/img/brand-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- brand end -->
+
+    <!-- newsletter begin -->
+    <div class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4">
+                    <div class="part-img">
+                        <img src="assets/img/newsletter.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 d-xl-flex d-lg-flex d-block align-items-center">
+                    <div class="newsletter-area">
+                        <h2>加入我们的时事通讯</h2>
+                        <p>Lorem ipsum dolor sit amet, ut id montes dui aenean</p>
+                        <form>
+                            <input type="email" placeholder="请输入您的邮箱">
+                            <button><i class="fas fa-space-shuttle"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- newsletter end -->
+
+    <!-- footer begin -->
+    <div class="footer">
+        <div th:replace="footer::footer"></div>
+    </div>
+    <!-- footer end -->
+
+   <!-- copyright begin -->
+    <div class="copyright">
+        <div th:replace="copyright::copyright"></div>
+    </div>
+    <!-- copyright end -->
+
+    <!-- jquery -->
+    <script th:src="@{/assets/js/jquery-3.3.1.min.js}"></script>
+    <script th:src="@{/assets/js/jquery-migrate-3.0.1.js}"></script>
+    <!-- bootstrap -->
+    <script th:src="@{/assets/js/bootstrap.min.js}"></script>
+    <!-- owl carousel -->
+    <script th:src="@{/assets/js/owl.carousel.js}"></script>
+    <!-- magnific popup -->
+    <script th:src="@{/assets/js/jquery.magnific-popup.js}"></script>
+    <!-- counter up js -->
+    <script th:src="@{/assets/js/jquery.counterup.min.js}"></script>
+    <!-- way poin js-->
+    <script th:src="@{/assets/js/waypoints.min.js}"></script>
+    <!-- wow js-->
+    <script th:src="@{/assets/js/wow.min.js}"></script>
+    <!-- main -->
+    <script th:src="@{/assets/js/main.js}"></script>
+
+    <!--<script>-->
+        <!--$(function(){-->
+            <!--/** common part-->
+             <!--* login etc.-->
+             <!--* nav-->
+             <!--* footer-->
+             <!--* CopyRight-->
+             <!--*/-->
+            <!--// $(".header-top").load("headtop.html");-->
+            <!--$(".main_menu_area").load("headarea.html");-->
+            <!--$(".footer").load("footer.html");-->
+            <!--$(".copyright").load("copyright.html");-->
+        <!--});-->
+    <!--</script>-->
+</body>
+
+</html>

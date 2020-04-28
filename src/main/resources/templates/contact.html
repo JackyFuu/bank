@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 大众银行 - 您的财富管家 </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- fontawesome icon  -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <img th:src="@{/assets/img/loader-img.gif}" alt="">
+    </div><!-- /Preloader -->
+
+    <!--Header Top-->
+    <div class="header-top">
+        <div  th:replace="headtop::head-top"></div>
+    </div>
+    <!--/Header Top-->
+
+    <!-- Header Area -->
+    <header class="main_menu_area header-2">
+        <div th:replace="headarea::head-area"></div>
+    </header><!-- Header Area -->
+
+    <!-- breadcrumb begin -->
+    <div class="breadcrumb-chn">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8">
+                    <div class="breadcrumb-content">
+                        <h2>Contact To Us</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li>/ Contact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb end -->
+
+    <!-- contact begin -->
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="part-map">
+                        <div class="address-area">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="part-text">
+                                        <h3>contact with us</h3>
+                                        <ul>
+                                            <li>Celeste Slater 606-3727</li>
+                                            <li>Ullamcorper. Street</li>
+                                            <li>Roseville NH 11523</li>
+                                            <li>stupit@temp.aogoen.com</li>
+                                        </ul>
+                                        <h4>call for support : </h4>
+                                        <span>(873) 392-8802</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 d-xl-flex d-lg-flex d-block align-items-center">
+                                    <div class="part-img">
+                                        <img src="assets/img/address.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact end -->
+
+    <!-- form begin -->
+    <div class="etu-form section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="form-area">
+                        <h2>Send Your Message To Us</h2>
+                        <form>
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="single-input-box">
+                                        <label>Name</label>
+                                        <input type="text" placeholder="Your Name">
+                                    </div>
+                                    <div class="single-input-box">
+                                        <label>Subject</label>
+                                        <input type="text" placeholder="Your Subject">
+                                    </div>
+                                    <div class="single-input-box">
+                                        <label>Email Address</label>
+                                        <input type="text" placeholder="Your Email Address">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="single-input-box">
+                                        <label>Message</label>
+                                        <textarea placeholder="Write Your Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button>Login Account</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- form end -->
+
+    <!-- footer begin -->
+    <div class="footer">
+        <div th:replace="footer::footer"></div>
+    </div>
+    <!-- footer end -->
+
+    <!-- copyright begin -->
+    <div class="copyright">
+        <div th:replace="copyright::copyright"></div>
+    </div>
+    <!-- copyright end -->
+
+    <!-- jquery -->
+    <script th:src="@{/assets/js/jquery-3.3.1.min.js}"></script>
+    <script th:src="@{/assets/js/jquery-migrate-3.0.1.js}"></script>
+    <!-- bootstrap -->
+    <script th:src="@{/assets/js/bootstrap.min.js}"></script>
+    <!-- owl carousel -->
+    <script th:src="@{/assets/js/owl.carousel.js}"></script>
+    <!-- magnific popup -->
+    <script th:src="@{/assets/js/jquery.magnific-popup.js}"></script>
+    <!-- counter up js -->
+    <script th:src="@{/assets/js/jquery.counterup.min.js}"></script>
+    <!-- way poin js-->
+    <script th:src="@{/assets/js/waypoints.min.js}"></script>
+    <!-- wow js-->
+    <script th:src="@{/assets/js/wow.min.js}"></script>
+    <!-- main -->
+    <script th:src="@{/assets/js/main.js}"></script>
+</body>
+
+</html>

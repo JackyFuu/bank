@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 大众银行 - 您的财富管家 </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}">
+    <!-- fontawesome icon  -->
+    <link rel="stylesheet" th:href="@{/assets/css/fontawesome.min.css}">
+    <!-- flaticon css -->
+    <link rel="stylesheet" th:href="@{/assets/fonts/flaticon.css}">
+    <!-- animate.css -->
+    <link rel="stylesheet" th:href="@{/assets/css/animate.css}">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" th:href="@{/assets/css/owl.carousel.min.css}">
+    <!-- magnific popup -->
+    <link rel="stylesheet" th:href="@{/assets/css/magnific-popup.css}">
+    <!-- stylesheet -->
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}">
+</head>
+
+<div th:fragment="head-area">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" th:href="@{/index}"><img th:src="@{/assets/img/logo-2.png}" alt=""></a>
+                <div class="mobile_toggle">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" th:href="@{/index}">主页</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/toAbout}">关于</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/toExchange}">交易</a></li>
+                        <li class="nav-item dropdown submenu">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                其他 <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" th:href="@{/toFaq}">FAQ</a></li>
+                                <li class="nav-item"><a class="nav-link" th:href="@{/toPrivacy}">隐私政策</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/toContact}">联系我们</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+</div>
+</html>

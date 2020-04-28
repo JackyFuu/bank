@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> 大众银行 - 你的财富管家 </title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- bootstrap -->
+        <link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}">
+        <!-- fontawesome icon  -->
+        <link rel="stylesheet" th:href="@{/assets/css/fontawesome.min.css}">
+        <!-- flaticon css -->
+        <link rel="stylesheet" th:href="@{/assets/fonts/flaticon.css}">
+        <!-- animate.css -->
+        <link rel="stylesheet" th:href="@{/assets/css/animate.css}">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" th:href="@{/assets/css/owl.carousel.min.css}">
+        <!-- magnific popup -->
+        <link rel="stylesheet" th:href="@{/assets/css/magnific-popup.css}">
+        <!-- stylesheet -->
+        <link rel="stylesheet" th:href="@{/assets/css/style.css}">
+    </head>
+
+    <body>
+        <!-- Preloader -->
+        <div class="preloader">
+            <img th:src="@{/assets/img/loader-img.gif}" alt="">
+        </div><!-- /Preloader --><!-- /Preloader -->
+
+        <!--Header Top-->
+        <div class="header-top">
+            <div  th:replace="headtop::head-top"></div>
+        </div>
+        <!--/Header Top-->
+        
+        <!-- Header Area -->
+        <header class="main_menu_area header-2">
+            <div th:replace="headarea::head-area"></div>
+        </header><!-- Header Area -->
+
+        <!-- breadcrumb begin -->
+        <div class="breadcrumb-chn">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-8">
+                        <div class="breadcrumb-content">
+                            <h2> 登 录 </h2>
+                            <ul>
+                                <li><a href="#">主页</a></li>
+                                <li>/ 注册</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb end --> 
+        
+        <!-- form begin -->
+        <div class="etu-form section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-8">
+                        <div class="form-area">
+                            <h2> 请在这里登录您的账户</h2>
+                            <form th:action="@{/user/login}" method="post">
+                                <div class="single-input-box">
+                                    <label>用户名</label>
+                                    <input name="username" type="text" placeholder="用户名">
+                                </div>
+                                <div class="single-input-box">
+                                    <label>密码</label>
+                                    <input name="password" type="password" placeholder="密码">
+                                </div>
+                                <button type="submit">登录</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- form end -->
+        
+        <!-- footer begin -->
+        <div class="footer"></div>
+        <!-- footer end -->
+
+        <!-- copyright begin -->
+        <div class="copyright"></div>
+        <!-- copyright end -->
+
+        <!-- jquery -->
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/jquery-migrate-3.0.1.js"></script>
+        <!-- bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- owl carousel -->
+        <script src="assets/js/owl.carousel.js"></script>
+        <!-- magnific popup -->
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <!-- counter up js -->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- way poin js-->
+        <script src="assets/js/waypoints.min.js"></script>
+        <!-- wow js-->
+        <script src="assets/js/wow.min.js"></script>
+        <!-- main -->
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            $(function(){
+                /** common part
+                 * login etc.
+                 * nav
+                 * footer
+                 * CopyRight
+                 */
+                $(".header-top").load("headtop.html");
+                $(".main_menu_area").load("headarea.html");
+                $(".footer").load("footer.html");
+                $(".copyright").load("copyright.html");
+            });
+        </script>
+    </body>
+
+</html>
